@@ -1,5 +1,8 @@
+import React, { component } from 'react';
+import ReactDOM from 'react-dom';
+import { App } from './components/app';
+
+//React Entrypoint
 document.addEventListener('DOMContentLoaded', () => {
-  let title = document.createElement('h1');
-  title.innerHTML = 'TITLE';
-  document.body.appendChild(title);
+  ReactDOM.render(<App/>, document.getElementById('react-entry'));
 });
